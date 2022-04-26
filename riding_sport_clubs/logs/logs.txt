@@ -1,0 +1,98 @@
+Watching for file changes with StatReloader
+C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\riding_sport_clubs\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\riding_sport_clubs\web_clubs\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\riding_sport_clubs\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\riding_sport_clubs\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\riding_sport_clubs\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\riding_sport_clubs\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\riding_sport_clubs\web_clubs\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\riding_sport_clubs\web_clubs\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\riding_sport_clubs\web_clubs\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\riding_sport_clubs\web_clubs\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\riding_sport_clubs\web_clubs\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\riding_sport_clubs\web_clubs\views.py changed, reloading.
+Watching for file changes with StatReloader
+authorised user
+C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\riding_sport_clubs\settings.py changed, reloading.
+2022-04-25 22:09:25,835 django.utils.autoreload [INFO] autoreload 4372 7232 Watching for file changes with StatReloader
+2022-04-25 22:09:26,353 root [INFO] views 4372 3584 authorised user
+2022-04-25 23:19:29,955 django.utils.autoreload [INFO] autoreload 16012 9144 Watching for file changes with StatReloader
+2022-04-25 23:19:40,609 root [INFO] views 16012 6972 authorised user
+2022-04-25 23:19:40,684 django.request [WARNING] log 16012 6972 Not Found: /media/clubs_logo/arabian.jpg
+2022-04-25 23:19:40,685 django.request [WARNING] log 16012 19024 Not Found: /media/clubs_logo/Base_image.jpg
+2022-04-25 23:23:57,709 root [INFO] views 16012 18968 authorised user
+2022-04-25 23:24:51,209 root [INFO] views 16012 19024 authorised user
+2022-04-25 23:32:54,279 django.utils.autoreload [INFO] autoreload 16592 15716 Watching for file changes with StatReloader
+2022-04-26 18:27:40,678 django.utils.autoreload [INFO] autoreload 15336 14020 Watching for file changes with StatReloader
+2022-04-26 18:27:43,152 django.request [WARNING] log 15336 4456 Not Found: /favicon.ico
+2022-04-26 18:27:57,543 root [INFO] views 15336 4456 authorised user
+2022-04-26 18:28:01,711 root [INFO] views 15336 4456 authorised user
+2022-04-26 18:28:02,783 root [INFO] views 15336 4456 authorised user
+2022-04-26 18:28:04,810 root [INFO] views 15336 4456 authorised user
+2022-04-26 18:28:06,694 root [INFO] views 15336 4456 authorised user
+2022-04-26 18:28:08,906 root [INFO] views 15336 4456 authorised user
+2022-04-26 18:28:10,031 root [INFO] views 15336 4456 authorised user
+2022-04-26 18:28:11,506 root [INFO] views 15336 4456 authorised user
+2022-04-26 18:40:00,861 django.utils.autoreload [INFO] autoreload 15336 14020 C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\riding_sport_clubs\web_accounts\admin.py changed, reloading.
+2022-04-26 18:40:01,375 django.utils.autoreload [INFO] autoreload 15060 7300 Watching for file changes with StatReloader
+2022-04-26 18:40:15,453 django.utils.autoreload [INFO] autoreload 10324 7712 Watching for file changes with StatReloader
+2022-04-26 18:41:52,076 django.utils.autoreload [INFO] autoreload 15828 5904 Watching for file changes with StatReloader
+2022-04-26 18:41:53,933 root [INFO] views 15828 12916 authorised user
+2022-04-26 18:44:08,562 django.utils.autoreload [INFO] autoreload 15828 5904 C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\riding_sport_clubs\web_clubs\views.py changed, reloading.
+2022-04-26 18:44:09,001 django.utils.autoreload [INFO] autoreload 13440 5320 Watching for file changes with StatReloader
+2022-04-26 18:44:48,986 django.utils.autoreload [INFO] autoreload 15488 6184 Watching for file changes with StatReloader
+2022-04-26 18:46:02,371 django.utils.autoreload [INFO] autoreload 19108 14124 Watching for file changes with StatReloader
+2022-04-26 18:54:29,363 django.utils.autoreload [INFO] autoreload 10788 13192 Watching for file changes with StatReloader
+2022-04-26 19:21:54,412 django.utils.autoreload [INFO] autoreload 10788 13192 C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\riding_sport_clubs\web_accounts\views.py changed, reloading.
+2022-04-26 19:21:56,476 django.utils.autoreload [INFO] autoreload 1888 12360 Watching for file changes with StatReloader
+2022-04-26 19:22:56,425 django.request [ERROR] log 1888 8644 Internal Server Error: /account/profile/delete/14
+Traceback (most recent call last):
+  File "C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\venv\lib\site-packages\django\views\generic\base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\venv\lib\site-packages\django\views\generic\edit.py", line 278, in post
+    return self.form_valid(form)
+  File "C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\riding_sport_clubs\web_accounts\views.py", line 76, in form_valid
+    img = self.object.picture.url.path
+AttributeError: 'str' object has no attribute 'path'
+2022-04-26 19:25:35,185 django.utils.autoreload [INFO] autoreload 1888 12360 C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\riding_sport_clubs\web_accounts\views.py changed, reloading.
+2022-04-26 19:25:35,679 django.utils.autoreload [INFO] autoreload 4304 14820 Watching for file changes with StatReloader
+2022-04-26 19:25:38,225 django.request [ERROR] log 4304 4732 Internal Server Error: /account/profile/delete/14
+Traceback (most recent call last):
+  File "C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\venv\lib\site-packages\django\views\generic\base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\venv\lib\site-packages\django\views\generic\edit.py", line 278, in post
+    return self.form_valid(form)
+  File "C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\riding_sport_clubs\web_accounts\views.py", line 77, in form_valid
+    img = profile.picture.url.path
+AttributeError: 'str' object has no attribute 'path'
+2022-04-26 19:26:23,731 django.utils.autoreload [INFO] autoreload 4304 14820 C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\riding_sport_clubs\web_accounts\views.py changed, reloading.
+2022-04-26 19:26:24,385 django.utils.autoreload [INFO] autoreload 1356 6184 Watching for file changes with StatReloader
+2022-04-26 19:27:34,011 django.utils.autoreload [INFO] autoreload 1356 6184 C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\riding_sport_clubs\web_accounts\views.py changed, reloading.
+2022-04-26 19:27:34,436 django.utils.autoreload [INFO] autoreload 1408 17728 Watching for file changes with StatReloader
+2022-04-26 19:29:28,179 django.utils.autoreload [INFO] autoreload 1408 17728 C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\riding_sport_clubs\web_accounts\views.py changed, reloading.
+2022-04-26 19:29:28,657 django.utils.autoreload [INFO] autoreload 8860 12924 Watching for file changes with StatReloader
+2022-04-26 19:34:03,300 root [INFO] views 8860 15736 authorised user
+2022-04-26 19:34:18,870 root [INFO] views 8860 15736 authorised user

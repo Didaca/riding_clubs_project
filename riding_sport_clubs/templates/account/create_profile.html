@@ -1,0 +1,14 @@
+{% extends 'bases/base_registrations_page.html' %}
+
+{% block base_registar %}
+    <div class="body">
+        <h1 style="text-decoration: overline underline darkgoldenrod">Create Profile</h1>
+        <div class="form">
+            <form method="post" action="{% url 'registration' %}" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form }}
+                <input type="submit" value="SUBMIT" />
+            </form>
+        </div>
+    </div>
+{% endblock %}

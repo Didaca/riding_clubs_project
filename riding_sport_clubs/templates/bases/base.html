@@ -1,0 +1,57 @@
+{% load base_page_tag %}
+{% load static %}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/horse_page.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/edit_profile.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/details_profile.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/clubs_list.css' %}" />
+    <title>Horse Clubs</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="img"><img src="{% static 'images/base_image_horse.png' %}" alt="Base image"/></li>
+                <li><a href="{% url 'home page' %}">Home</a></li>
+                {% if request.user.is_superuser %}
+                    <li><a href="{% url 'pay page' %}">Horse Club Registration</a></li>
+                {% else %}
+                    <li><a href="{% url 'racing info' %}">Horse Club Registration</a></li>
+                {% endif %}
+                <li><a href="{% url 'list clubs' %}">Clubs</a></li>
+                <li><a href="{% url 'breeds page' %}">Horse Breeds</a></li>
+                <li><a href="{% url 'racing info' %}">Racing</a></li>
+                <li class="right">
+                    {% if request.user.is_authenticated %}
+                        {% if object %}
+                            <img src="{{ object.picture.url }}" alt="Empty image" width="40" height="35"/>
+                        {% else %}
+                            <img src="{% static 'images/base_image_profile.png' %}" alt="Empty image" width="40" height="35"/>
+                        {% endif %}
+                        <li><a href="{% url 'details profile' request.user.pk %}">Profile</a></li>
+                        <li><a href="{% url 'logout' %}">Logout</a></li>
+                    {% else %}
+                        <li><a href="{% url 'login' %}">Login</a></li>
+                        <li><a href="{% url 'registration' %}">Register</a></li>
+                    {% endif %}
+            </ul>
+        </nav>
+    </header>
+{% block base %}
+{% endblock %}
+    <footer>
+        <div>
+            <a class="t-left">Python Web Framework Exam / D.V.Ivanov@students.softuni.bg</a>
+            <a class="t-right">Tel: +359 877041238</a>
+        </div>
+    </footer>
+</body>
+</html>

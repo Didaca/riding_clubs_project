@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/horse_page.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/breeds.css' %}" />
+    <title>Login</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="img"><img src="{% static 'images/base_image_horse.png' %}" alt="Base image" /></li>
+                <li><a href="{% url 'home page' %}">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+{% block base_registar %}
+{% endblock %}
+
+    <footer>
+        <div>
+            <a class="t-left">Python Web Framework Exam / D.V.Ivanov@students.softuni.bg</a>
+            <a class="t-right">Tel: +359 877041238</a>
+        </div>
+    </footer>
+</body>
+</html>

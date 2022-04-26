@@ -1,0 +1,48 @@
+{% extends 'bases/base.html' %}
+{% load static %}
+
+{% block base %}
+    <section id="catalogPage">
+        {% for club in object_list %}
+            <div class="card-box">
+                <img style="border: 1px solid #1b2845" src="{{ club.club_logo.url }}" alt="Club Image">
+            <div class="text-center">
+                <p class="name" style="color: #45a29e">Club Name: {{ club.club_name }}</p>
+                <p class="owner" style="color: #45a29e">Owner: {{ club.owner }}</p>
+                {% for trainer in club.trainer_set.all %}
+                    <p class="genre" style="color: #45a29e">Trainer: {{ trainer.trainer_first_name}} {{ trainer.trainer_last_name }}</p>
+                {% endfor %}
+                <p class="awards">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffd700" class="bi bi-award-fill" viewBox="0 0 16 16">
+                        <path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z"/>
+                        <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+                    </svg>
+                    <i>{{ club.award_gold }}</i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#bfc1c2" class="bi bi-award-fill" viewBox="0 0 16 16">
+                        <path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z"/>
+                        <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+                    </svg>
+                    <i>{{ club.award_silver }}</i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#cdab7e" class="bi bi-award-fill" viewBox="0 0 16 16">
+                        <path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z"/>
+                        <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+                    </svg>
+                    <i>{{ club.award_bronze }}</i>
+                </p>
+                <p class="rating" style="color: #EF7D00;font-style: oblique ">Rating: {{ club.rating }}
+                    {% if request.user.is_authenticated %}
+                        <a class="likes" href="{% url 'like club' club.pk %}" style="margin-left: 10px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#EF7D00" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                            <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+                            </svg>
+                        </a>
+                    {% endif %}
+                </p>
+            </div>
+            <div class="btn-group">
+                <a href="{% url 'club info' club.pk %}">More Info</a>
+            </div>
+            </div>
+        {% endfor %}
+    </section>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'bases/base_registrations_page.html' %}
+{% load static %}
+
+{% block base_registar %}
+    <div class="gallery">
+      <a target="_blank" href="{% url 'racing info' %}">
+        <img src="{% static 'images/breeds_pictures/arabian.jpg' %}" alt="Arabian" width="600" height="400">
+      </a>
+      <div class="desc">Arabian Horse Breed</div>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="{% url 'racing info' %}">
+        <img src="{% static 'images/breeds_pictures/friesians.jpg' %}" alt="Friesian" width="600" height="400">
+      </a>
+      <div class="desc">Friesian Horse Breed</div>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="{% url 'racing info' %}">
+        <img src="{% static 'images/breeds_pictures/andalusian.jpg' %}" alt="Andalusian" width="600" height="400">
+      </a>
+      <div class="desc">Andalusian Horse Breed</div>
+    </div>
+{% endblock %}

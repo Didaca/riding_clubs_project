@@ -1,0 +1,16 @@
+{% extends 'bases/base_registrations_page.html' %}
+{% load static %}
+
+{% block base_registar %}
+    <div class="body">
+        <h1 style="text-decoration: overline underline darkgoldenrod">Login Portal</h1>
+        <div class="form">
+            <form method="post" action="{% url 'login' %}">
+                {% csrf_token %}
+                {{ form }}
+
+                <input type="submit" value="SUBMIT" />
+            </form>
+        </div>
+    </div>
+{% endblock %}

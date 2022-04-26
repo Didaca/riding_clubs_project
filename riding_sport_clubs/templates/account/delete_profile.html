@@ -1,0 +1,13 @@
+{% extends 'bases/base.html' %}
+{% load static %}
+
+{% block base %}
+    <div class="delete-text">
+        <h1 style="text-decoration: overline underline darkgoldenrod">Delete Portal</h1>
+        <p style="font-family: Papyrus fantasy;color: #800000;font-size: 40px; text-align: center;">Are you sure you want to delete your profile?</p>
+        <form method="post" action="{% url 'delete profile' object.pk %}" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input style="text-align: center" type="submit" value="Delete">
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,67 @@
+from django.test import TestCase
+
+from riding_sport_clubs.base_validators.validators import VALIDATE_NAME, VALIDATE_PLUS, VALIDATE_NUMBER
+from riding_sport_clubs.web_accounts.models import Profile
+
+
+class ProfileTests(TestCase):
+
+    def setUp(self):
+        self.profile = Profile(first_name='Ivo', last_name='Ivov', email='ivo@clubs.bg', gender='male',
+                               phone_number='+359866012345')
+
+    def test_first_name__when_name_contains_only_letters__expect_success(self):
+        first_name = 'Ivo'
+
+        self.assertEqual(first_name, self.profile.first_name)
+
+    def test_first_name__when_name_not_contains_only_letters__expect_error(self):
+        self.profile.first_name = 'Ivo_'
+
+        with self.assertRaises(ValueError) as contex:
+            self.profile.full_clean()
+            self.profile.save()
+
+        self.assertEqual(VALIDATE_NAME, str(contex.exception))
+
+    def test_last_name__when_name_contains_only_letters__expect_success(self):
+        last_name = 'Ivov'
+
+        self.assertEqual(last_name, self.profile.last_name)
+
+    def test_last_name__when_name_not_contains_only_letters__expect_error(self):
+        self.profile.last_name = 'Ivov_'
+
+        with self.assertRaises(ValueError) as contex:
+            self.profile.full_clean()
+            self.profile.save()
+
+        self.assertEqual(VALIDATE_NAME, str(contex.exception))
+
+    def test_phone_number__when_number_correct__expect_success(self):
+        number = '+359866012345'
+
+        self.assertEqual(number, self.profile.phone_number)
+
+    def test_phone_number__when_number_not_start_with_plus__expect_error(self):
+        self.profile.phone_number = '359866012345'
+
+        with self.assertRaises(ValueError) as context:
+            self.profile.full_clean()
+            self.profile.save()
+
+        self.assertEqual(VALIDATE_PLUS, str(context.exception))
+
+    def test_phone_number__when_number_not_contains_only_digit__expect_error(self):
+        self.profile.phone_number = '+359866_012345'
+
+        with self.assertRaises(ValueError) as context:
+            self.profile.full_clean()
+            self.profile.save()
+
+        self.assertEqual(VALIDATE_NUMBER, str(context.exception))
+
+    def test_full_name__when_correct__expect_success(self):
+        full_name = f'{self.profile.first_name} {self.profile.last_name}'
+
+        self.assertEqual(full_name, self.profile.full_name)

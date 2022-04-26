@@ -1,0 +1,150 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');*/
+body {
+    background: lightgray;
+    font-family: Papyrus fantasy;
+    margin: 0;
+    padding: 0;
+}
+
+.video {
+    display: flex;
+    background-color: #767676;
+    justify-content: center;
+}
+
+.horse {
+    object-fit: cover;
+    height: 400px;
+    width: 100%;
+}
+
+/* navigation bar layout and style */
+nav {
+    background: #111;
+    height: 80px;
+}
+/* navigation bar how items display */
+nav ul {
+    display: inline;
+}
+
+/* navigation bar inside items */
+nav ul li,
+nav ul li a {
+    color: #b89f5c;
+    display: inline;
+    text-decoration: none;
+    list-style: none;
+    font-size: 15px;
+/* Padding is used to create space around an element's content,
+inside of any defined borders. */
+    padding: 6px;
+/* Create space from the top to the element. */
+    margin-right: auto;
+}
+
+/*navigation bar right items positioning */
+nav ul li.right {
+    display: inline-block;
+    margin-left: 600px;
+}
+/*navigation bar right items */
+nav ul li.right a {
+    color: #b89f5c;
+    text-decoration: none;
+    list-style: none;
+    font-size: 15px;
+}
+
+nav ul li.right img {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/*navigation bar img area */
+nav ul li.img {
+    margin-top: 30px;
+}
+
+/*heading 1 and 2 */
+h1, h2 {
+    text-align: center;
+}
+
+.text {
+    padding-top: 20px;
+    font-family: Papyrus fantasy;
+    font-size: 40px;
+    color: darkgray;
+}
+
+/*data form with boxes to write - profile and notes
+<div class="form"> in the html file*/
+.form {
+    background-color: darkgray;
+    /* space around an element's content inside of any defined borders. */
+    padding: 30px;
+    /* width of the box */
+    width: 35%;
+    margin: 3% auto 15% auto;
+}
+
+/*data form where you enter data - profile*/
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=number],
+input[type=password],
+select,
+textarea {
+    width: 100%;
+    padding: 15px 20px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 5px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+/* all other buttons */
+input[type=submit],
+.button {
+    background-color: lightgray;
+    color: #111111;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    font-family: Papyrus fantasy;
+    font-size: 22px;
+    display: block;
+    margin: 10px;
+}
+
+/* all buttons when the mouse is on them */
+input[type=submit]:hover,
+.button:hover {
+    background-color: lightgray;
+    text-decoration: underline #b89f5c;
+}
+
+
+/* footer style and layout */
+footer {
+    position: fixed;
+    bottom: 0;
+    background: #111;
+    width: 100%;
+    padding: 15px 0;
+}
+
+/* footer inside items */
+footer div {
+    color: #b89f5c;
+    text-align: center;
+}
+
+footer div a.t-left {
+    padding-right: 20px;
+}

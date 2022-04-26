@@ -1,0 +1,29 @@
+{% extends 'bases/base.html' %}
+{% load static %}
+
+{% block base %}
+    <section id="detailsPage">
+        <div class="wrapper">
+
+            <div class="albumCover">
+                <!-- Album Image -->
+                <img style="object-fit: inherit;width: 300px;height: 400px;" src="{{ object.picture.url }}" alt="Cover Image">
+            </div>
+            <div class="albumInfo">
+                <div class="albumText">
+                    <p style="font-family: Papyrus fantasy; font-size: 30px; color: #274060;padding-top: 15px;">Name: <i>{{ object.full_name }}</i></p>
+                    <p style="font-family: Papyrus fantasy; font-size: 30px; color: #274060;padding-top: 15px;">Email: <i>{{ object.email }}</i></p>
+                    <p style="font-family: Papyrus fantasy; font-size: 30px; color: #274060;padding-top: 15px;">Gender: <i>{{ object.gender }}</i></p>
+                    <p style="font-family: Papyrus fantasy; font-size: 30px; color: #274060;padding-top: 15px;">Phone Number: <i>{{ object.phone_number }}</i></p>
+                </div>
+
+                <div class="actionBtn">
+                    <!-- Album Buttons -->
+                    <a href="{% url 'edit profile' object.pk %}" class="edit">Edit</a>
+                    <a href="{% url 'delete profile' object.pk %}" class="remove">Delete</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+{% endblock %}
