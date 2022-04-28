@@ -85,6 +85,11 @@ class ClubDetailsView(views.DetailView):
     model = Club
     template_name = 'web/club_info.html'
 
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        queryset.prefetch_related('trainer_set')
+        return queryset
+
 
 
 

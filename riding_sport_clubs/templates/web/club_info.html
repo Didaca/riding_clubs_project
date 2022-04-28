@@ -3,9 +3,26 @@
 
 
 {% block base %}
-    <div class="text">
-        <h1 style="color: goldenrod;">Our page is almost ready.<br>Please come back soon!</h1>
-    </div>
+     <div class="row">
+        <div class="clubCover">
+            <img style="object-fit: inherit;width: 300px;height: 180px;" src="{{ club.club_logo.url }}" alt="Club Image">
+            <div class="button">
+                <a>EditClub</a>
+            </div>
+        </div>
+        <div class="clubInfo">
+            <div class="clubText">
+                <p style="font-family: Papyrus fantasy; font-size: 30px; color: #274060;padding-top: 15px; text-align: center"><i>{{ club.club_name }}</i></p>
+                <p style="font-family: Papyrus fantasy; font-size: 30px; color: #274060;padding-top: 15px;"><i>{{ club.description }}</i></p>
+                <p style="text-align: center; font-size: 30px; color: green">Trainers</p>
+                {% for trainer in club.trainer_set.all %}
+                    <p style="font-family: Papyrus fantasy; font-size: 30px; color: #274060;padding-top: 15px;"><i>{{ trainer}}</i></p>
+                {% endfor %}
+                <p style="font-family: Papyrus fantasy; font-size: 30px; color: #274060;padding-top: 15px;">Email: <i>{{ club.email_club}}</i></p>
+                <p style="font-family: Papyrus fantasy; font-size: 30px; color: #274060;padding-top: 15px;">Address: <i>{{ club.address}}</i></p>
+            </div>
+        </div>
+     </div>
 {% endblock %}
 
 

@@ -1,27 +1,27 @@
-.wrapper {
-    height: 400px;
+div.row {
+    height: 800px;
     width: 1000px;
     border-radius: 7px 7px 7px 7px;
-    box-shadow: 0 0 1.5px 3px gray;
+    box-shadow: 0 0 1.5px 3px white;
     margin: 30px auto 200px;
 }
 
-.albumCover {
+.clubCover {
     float: left;
     height: 100%;
     margin-right: 20px;
 }
 
-.actionBtn {
+div.button {
     display: flex;
     text-align: center;
     left: auto;
     top: auto;
-    right: 0;
-    bottom: 0;
+    right: auto;
+    bottom: auto;
 }
 
-.actionBtn > a {
+div.button > a {
 	width: 200%;
 	height: 50px;
 	cursor: pointer;
@@ -46,6 +46,6 @@
     margin-right: 50px;
 }
 
-.actionBtn > a:hover {
+div.button > a:hover {
 	background-position: right;
 }

@@ -16,8 +16,8 @@ class ClubAdmin(admin.ModelAdmin):
 
 @admin.register(Trainer)
 class TrainerAdmin(admin.ModelAdmin):
-    list_display = ('trainer_first_name', 'trainer_last_name', 'trainer_age',)
-    ordering = ('trainer_first_name', 'trainer_last_name', 'trainer_age',)
+    list_display = ('trainer_first_name', 'trainer_last_name', 'trainer_age', 'clubs',)
+    ordering = ('trainer_first_name', 'trainer_last_name', 'clubs',)
 
 
 @admin.register(HorseBreed)

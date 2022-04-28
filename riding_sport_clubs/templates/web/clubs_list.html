@@ -10,7 +10,7 @@
                 <p class="name" style="color: #45a29e">Club Name: {{ club.club_name }}</p>
                 <p class="owner" style="color: #45a29e">Owner: {{ club.owner }}</p>
                 {% for trainer in club.trainer_set.all %}
-                    <p class="genre" style="color: #45a29e">Trainer: {{ trainer.trainer_first_name}} {{ trainer.trainer_last_name }}</p>
+                    <p class="genre" style="color: #45a29e">Trainer: {{ trainer }}</p>
                 {% endfor %}
                 <p class="awards">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffd700" class="bi bi-award-fill" viewBox="0 0 16 16">

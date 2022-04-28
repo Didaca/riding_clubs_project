@@ -96,3 +96,138 @@ AttributeError: 'str' object has no attribute 'path'
 2022-04-26 19:29:28,657 django.utils.autoreload [INFO] autoreload 8860 12924 Watching for file changes with StatReloader
 2022-04-26 19:34:03,300 root [INFO] views 8860 15736 authorised user
 2022-04-26 19:34:18,870 root [INFO] views 8860 15736 authorised user
+2022-04-27 00:10:42,836 django.utils.autoreload [INFO] autoreload 17228 18712 Watching for file changes with StatReloader
+2022-04-27 00:15:32,091 django.utils.autoreload [INFO] autoreload 18052 5360 Watching for file changes with StatReloader
+2022-04-27 00:17:52,786 django.utils.autoreload [INFO] autoreload 14580 9628 Watching for file changes with StatReloader
+2022-04-27 20:44:46,955 django.utils.autoreload [INFO] autoreload 6396 12652 Watching for file changes with StatReloader
+2022-04-27 20:44:49,864 django.request [WARNING] log 6396 4660 Not Found: /favicon.ico
+2022-04-27 21:27:00,883 root [INFO] views 6396 8552 authorised user
+2022-04-27 21:27:59,653 root [INFO] views 6396 14436 authorised user
+2022-04-27 21:28:40,447 root [INFO] views 6396 14436 authorised user
+2022-04-27 22:00:45,674 django.utils.autoreload [INFO] autoreload 6396 12652 C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\web_clubs\views.py changed, reloading.
+2022-04-27 22:00:46,285 django.utils.autoreload [INFO] autoreload 11640 6520 Watching for file changes with StatReloader
+2022-04-27 22:00:48,207 root [INFO] views 11640 1948 authorised user
+2022-04-27 22:25:16,342 root [INFO] views 11640 16476 authorised user
+2022-04-27 22:26:38,163 root [INFO] views 11640 16476 authorised user
+2022-04-27 22:32:00,304 django.request [WARNING] log 11640 16476 Not Found: /club_info/2/clubs_logo/arabian.jpg
+2022-04-27 23:47:21,376 root [INFO] views 11640 18476 authorised user
+2022-04-28 00:03:40,364 root [INFO] views 11640 18476 authorised user
+2022-04-28 00:03:50,141 root [INFO] views 11640 2732 authorised user
+2022-04-28 00:10:43,718 root [INFO] views 11640 7520 authorised user
+2022-04-28 00:10:45,948 root [INFO] views 11640 7520 authorised user
+2022-04-28 00:29:12,546 django.request [ERROR] log 11640 1436 Internal Server Error: /club_info/2/
+Traceback (most recent call last):
+  File "C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 811, in __init__
+    self.literal = float(var)
+ValueError: could not convert string to float: 'club.__class__.__name__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 827, in __init__
+    self.literal = mark_safe(unescape_string_literal(var))
+  File "C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\venv\lib\site-packages\django\utils\functional.py", line 238, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\venv\lib\site-packages\django\utils\text.py", line 417, in unescape_string_literal
+    raise ValueError("Not a string literal: %r" % s)
+ValueError: Not a string literal: 'club.__class__.__name__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\venv\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\venv\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\venv\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\venv\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\venv\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 687, in __init__
+    var_obj = Variable(var)
+  File "C:\Users\Win10\PycharmProjects\Final project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 832, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Variables and attributes may not begin with underscores: 'club.__class__.__name__'
+2022-04-28 00:36:20,685 root [INFO] views 11640 1436 authorised user
+2022-04-28 00:44:05,847 root [INFO] views 11640 15492 authorised user
+2022-04-28 18:59:50,787 django.utils.autoreload [INFO] autoreload 15204 16372 Watching for file changes with StatReloader
+2022-04-28 18:59:53,595 django.request [WARNING] log 15204 15316 Not Found: /favicon.ico
+2022-04-28 19:07:24,932 django.request [WARNING] log 15204 6968 Not Found: /админ/
+2022-04-28 19:14:43,639 root [INFO] views 15204 1756 authorised user
+2022-04-28 19:15:42,242 root [INFO] views 15204 7620 authorised user
+2022-04-28 19:15:58,294 root [INFO] views 15204 7620 authorised user
+2022-04-28 19:17:16,526 django.utils.autoreload [INFO] autoreload 15204 16372 C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\settings.py changed, reloading.
+2022-04-28 19:18:06,815 django.utils.autoreload [INFO] autoreload 1228 14092 Watching for file changes with StatReloader
+2022-04-28 19:18:09,120 django.request [WARNING] log 1228 5088 Not Found: /админ/
+2022-04-28 19:18:28,071 django.request [WARNING] log 1228 5088 Not Found: /админ/
+2022-04-28 19:18:59,855 django.utils.autoreload [INFO] autoreload 1228 14092 C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\settings.py changed, reloading.
+2022-04-28 19:19:00,358 django.utils.autoreload [INFO] autoreload 3736 1144 Watching for file changes with StatReloader
+2022-04-28 19:19:01,129 django.request [WARNING] log 3736 12916 Not Found: /админ/
+2022-04-28 19:23:54,068 root [INFO] views 3736 12916 authorised user
+2022-04-28 19:24:16,987 root [INFO] views 3736 12916 authorised user
+2022-04-28 19:24:29,845 root [INFO] views 3736 12916 authorised user
+2022-04-28 19:25:20,134 django.request [WARNING] log 3736 12916 Not Found: /Aadmin/
+2022-04-28 19:47:45,104 root [INFO] views 3736 11308 authorised user
+2022-04-28 19:48:09,282 root [INFO] views 3736 11308 authorised user
+2022-04-28 20:03:40,414 django.utils.autoreload [INFO] autoreload 2580 3968 Watching for file changes with StatReloader
+2022-04-28 20:04:13,861 django.utils.autoreload [INFO] autoreload 1248 8384 Watching for file changes with StatReloader
+2022-04-28 20:04:37,230 django.request [WARNING] log 1248 18632 Not Found: /админ/
+2022-04-28 20:04:41,101 django.request [WARNING] log 1248 18632 Not Found: /админ/
+2022-04-28 20:04:56,990 django.request [WARNING] log 1248 18632 Not Found: /админ/
+2022-04-28 20:05:02,925 django.utils.autoreload [INFO] autoreload 14712 5776 Watching for file changes with StatReloader
+2022-04-28 20:29:13,243 django.utils.autoreload [INFO] autoreload 14968 19596 Watching for file changes with StatReloader
+2022-04-28 20:29:17,447 root [INFO] views 14968 11152 authorised user
+2022-04-28 20:30:44,681 root [INFO] views 14968 11152 authorised user
+2022-04-28 20:31:03,959 root [INFO] views 14968 11152 authorised user
+2022-04-28 20:32:07,685 django.utils.autoreload [INFO] autoreload 19512 13372 Watching for file changes with StatReloader
+2022-04-28 20:32:11,982 root [INFO] views 19512 14708 authorised user
+2022-04-28 20:33:13,709 django.utils.autoreload [INFO] autoreload 20372 8184 Watching for file changes with StatReloader
+2022-04-28 20:33:20,164 root [INFO] views 20372 4056 authorised user
+2022-04-28 20:34:34,531 root [INFO] views 20372 4056 authorised user
+2022-04-28 20:37:27,208 root [INFO] views 20372 4056 authorised user
+2022-04-28 20:38:27,199 root [INFO] views 20372 4056 authorised user
+2022-04-28 20:39:56,946 root [INFO] views 20372 4056 authorised user
+2022-04-28 20:44:01,299 django.utils.autoreload [INFO] autoreload 20372 8184 C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\web_clubs\admin.py changed, reloading.
+2022-04-28 20:44:01,786 django.utils.autoreload [INFO] autoreload 19672 18804 Watching for file changes with StatReloader
+2022-04-28 20:44:41,579 django.utils.autoreload [INFO] autoreload 19672 18804 C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\web_clubs\admin.py changed, reloading.
+2022-04-28 20:44:42,052 django.utils.autoreload [INFO] autoreload 18280 20888 Watching for file changes with StatReloader
+2022-04-28 20:45:01,868 django.utils.autoreload [INFO] autoreload 18280 20888 C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\web_clubs\admin.py changed, reloading.
+2022-04-28 20:45:02,335 django.utils.autoreload [INFO] autoreload 7848 10204 Watching for file changes with StatReloader
+2022-04-28 20:47:29,422 root [INFO] views 7848 11808 authorised user
+2022-04-28 20:47:41,204 root [INFO] views 7848 11808 authorised user
+2022-04-28 20:47:46,245 root [INFO] views 7848 11808 authorised user
+2022-04-28 20:47:59,995 root [INFO] views 7848 11808 authorised user
