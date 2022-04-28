@@ -90,6 +90,16 @@ class ClubDetailsView(views.DetailView):
         queryset.prefetch_related('trainer_set')
         return queryset
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data()
+        pk = self.request.user.pk
+        user_object = Profile.objects.get(pk=pk)
+        if user_object:
+            context['object'] = user_object
+        else:
+            context['object'] = None
+        return context
+
 
 
 

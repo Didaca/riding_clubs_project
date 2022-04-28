@@ -300,3 +300,71 @@ django.template.exceptions.TemplateSyntaxError: Variables and attributes may not
 2022-04-28 23:00:51,195 django.utils.autoreload [INFO] autoreload 14404 16044 Watching for file changes with StatReloader
 2022-04-28 23:01:36,312 django.utils.autoreload [INFO] autoreload 14404 16044 C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\web_accounts\views.py changed, reloading.
 2022-04-28 23:01:36,795 django.utils.autoreload [INFO] autoreload 10452 15732 Watching for file changes with StatReloader
+2022-04-28 23:13:01,092 django.utils.autoreload [INFO] autoreload 10452 15732 C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\web_accounts\templatetags\base_page_tag.py changed, reloading.
+2022-04-28 23:13:01,618 django.utils.autoreload [INFO] autoreload 4740 7872 Watching for file changes with StatReloader
+2022-04-28 23:23:41,677 django.utils.autoreload [INFO] autoreload 5792 9656 Watching for file changes with StatReloader
+2022-04-28 23:26:43,940 django.utils.autoreload [INFO] autoreload 5792 9656 C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\web_clubs\views.py changed, reloading.
+2022-04-28 23:26:44,444 django.utils.autoreload [INFO] autoreload 14144 19256 Watching for file changes with StatReloader
+2022-04-28 23:27:09,377 django.utils.autoreload [INFO] autoreload 14144 19256 C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\web_clubs\views.py changed, reloading.
+2022-04-28 23:27:09,842 django.utils.autoreload [INFO] autoreload 9824 15208 Watching for file changes with StatReloader
+2022-04-28 23:27:40,029 django.utils.autoreload [INFO] autoreload 13852 1972 Watching for file changes with StatReloader
+2022-04-28 23:28:38,182 django.utils.autoreload [INFO] autoreload 13852 1972 C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\web_clubs\views.py changed, reloading.
+2022-04-28 23:28:38,769 django.utils.autoreload [INFO] autoreload 3804 15596 Watching for file changes with StatReloader
+2022-04-28 23:29:18,577 django.utils.autoreload [INFO] autoreload 6940 18560 Watching for file changes with StatReloader
+2022-04-28 23:32:45,510 django.utils.autoreload [INFO] autoreload 1496 20156 Watching for file changes with StatReloader
+2022-04-28 23:46:10,793 django.utils.autoreload [INFO] autoreload 1496 20156 C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\web_accounts\templatetags\base_page_tag.py changed, reloading.
+2022-04-28 23:46:11,253 django.utils.autoreload [INFO] autoreload 3132 2784 Watching for file changes with StatReloader
+2022-04-28 23:50:38,407 django.utils.autoreload [INFO] autoreload 3136 14544 Watching for file changes with StatReloader
+2022-04-28 23:51:01,368 django.utils.autoreload [INFO] autoreload 3136 14544 C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\web_clubs\views.py changed, reloading.
+2022-04-28 23:51:01,934 django.utils.autoreload [INFO] autoreload 7176 21388 Watching for file changes with StatReloader
+2022-04-28 23:51:05,217 django.request [ERROR] log 7176 19080 Internal Server Error: /list_clubs/
+Traceback (most recent call last):
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\defaulttags.py", line 954, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\defaulttags.py", line 840, in do_for
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'for' statements should use the format 'for x in y': for object in request | has_user
+2022-04-28 23:52:34,182 django.utils.autoreload [INFO] autoreload 7176 21388 C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\web_clubs\views.py changed, reloading.
+2022-04-28 23:52:34,649 django.utils.autoreload [INFO] autoreload 16036 2888 Watching for file changes with StatReloader
