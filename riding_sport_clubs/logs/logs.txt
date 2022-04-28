@@ -296,3 +296,7 @@ django.template.exceptions.TemplateSyntaxError: Variables and attributes may not
 2022-04-28 22:09:45,890 django.utils.autoreload [INFO] autoreload 14696 4840 Watching for file changes with StatReloader
 2022-04-28 22:11:30,399 django.utils.autoreload [INFO] autoreload 14696 4840 C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\web_clubs\urls.py changed, reloading.
 2022-04-28 22:11:30,881 django.utils.autoreload [INFO] autoreload 7536 14500 Watching for file changes with StatReloader
+2022-04-28 23:00:49,166 django.utils.autoreload [INFO] autoreload 7536 14500 C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\web_accounts\views.py changed, reloading.
+2022-04-28 23:00:51,195 django.utils.autoreload [INFO] autoreload 14404 16044 Watching for file changes with StatReloader
+2022-04-28 23:01:36,312 django.utils.autoreload [INFO] autoreload 14404 16044 C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\web_accounts\views.py changed, reloading.
+2022-04-28 23:01:36,795 django.utils.autoreload [INFO] autoreload 10452 15732 Watching for file changes with StatReloader

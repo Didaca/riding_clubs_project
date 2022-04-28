@@ -40,6 +40,11 @@ class ChangeUserPasswordView(PasswordChangeView):
     template_name = 'account/edit_password.html'
     success_url = reverse_lazy('list clubs')
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['object'] = Profile.objects.get(pk=self.request.user.pk)
+        return context
+
 
 class ProfileDetailsView(DetailView):
     model = Profile
