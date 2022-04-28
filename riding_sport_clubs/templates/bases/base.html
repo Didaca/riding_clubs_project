@@ -22,10 +22,10 @@
             <ul>
                 <li class="img"><img src="{% static 'images/base_image_horse.png' %}" alt="Base image"/></li>
                 <li><a href="{% url 'home page' %}">Home</a></li>
-                {% if request.user.is_superuser %}
+                {% if request.user.is_staff %}
                     <li><a href="{% url 'pay page' %}">Horse Club Registration</a></li>
                 {% else %}
-                    <li><a href="{% url 'racing info' %}">Horse Club Registration</a></li>
+                    <li><a href="{% url 'authorization' %}">Horse Club Registration</a></li>
                 {% endif %}
                 <li><a href="{% url 'list clubs' %}">Clubs</a></li>
                 <li><a href="{% url 'breeds page' %}">Horse Breeds</a></li>

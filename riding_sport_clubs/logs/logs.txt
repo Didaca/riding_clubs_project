@@ -231,3 +231,68 @@ django.template.exceptions.TemplateSyntaxError: Variables and attributes may not
 2022-04-28 20:47:41,204 root [INFO] views 7848 11808 authorised user
 2022-04-28 20:47:46,245 root [INFO] views 7848 11808 authorised user
 2022-04-28 20:47:59,995 root [INFO] views 7848 11808 authorised user
+2022-04-28 21:34:40,683 django.utils.autoreload [INFO] autoreload 17392 1696 Watching for file changes with StatReloader
+2022-04-28 21:34:43,755 root [INFO] views 17392 7640 authorised user
+2022-04-28 21:34:56,589 django.request [WARNING] log 17392 13008 Not Found: /dd/
+2022-04-28 21:36:11,487 root [INFO] views 17392 13008 authorised user
+2022-04-28 21:36:18,060 django.request [WARNING] log 17392 13008 Not Found: /list_clubs/sdsd/
+2022-04-28 21:37:12,762 root [INFO] views 17392 13008 authorised user
+2022-04-28 21:37:28,411 root [INFO] views 17392 13008 authorised user
+2022-04-28 21:38:06,143 django.utils.autoreload [INFO] autoreload 17392 1696 C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\web_clubs\urls.py changed, reloading.
+2022-04-28 21:38:06,548 django.utils.autoreload [INFO] autoreload 8640 15872 Watching for file changes with StatReloader
+2022-04-28 21:38:13,358 django.request [WARNING] log 8640 18400 Not Found: /ddd/
+2022-04-28 21:38:36,914 django.utils.autoreload [INFO] autoreload 8640 15872 C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\settings.py changed, reloading.
+2022-04-28 21:38:37,337 django.utils.autoreload [INFO] autoreload 4124 9440 Watching for file changes with StatReloader
+2022-04-28 21:38:37,642 django.request [WARNING] log 4124 4816 Not Found: /ddd/
+2022-04-28 21:39:12,615 django.utils.autoreload [INFO] autoreload 4124 9440 C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\web_clubs\urls.py changed, reloading.
+2022-04-28 21:39:13,011 django.utils.autoreload [INFO] autoreload 18652 12752 Watching for file changes with StatReloader
+2022-04-28 21:39:13,321 django.request [WARNING] log 18652 6280 Not Found: /ddd/
+2022-04-28 21:40:33,814 django.utils.autoreload [INFO] autoreload 18652 12752 C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\web_clubs\urls.py changed, reloading.
+2022-04-28 21:40:34,221 django.utils.autoreload [INFO] autoreload 2860 7176 Watching for file changes with StatReloader
+2022-04-28 21:40:35,094 django.request [WARNING] log 2860 6164 Not Found: /ddd/
+2022-04-28 21:40:43,715 django.utils.autoreload [INFO] autoreload 2860 7176 C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\settings.py changed, reloading.
+2022-04-28 21:40:44,102 django.utils.autoreload [INFO] autoreload 19328 20360 Watching for file changes with StatReloader
+2022-04-28 21:40:44,659 django.request [WARNING] log 19328 20108 Not Found: /ddd/
+2022-04-28 21:42:48,649 django.utils.autoreload [INFO] autoreload 19328 20360 C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\web_clubs\views.py changed, reloading.
+2022-04-28 21:42:49,088 django.utils.autoreload [INFO] autoreload 15020 728 Watching for file changes with StatReloader
+2022-04-28 21:45:46,302 django.utils.autoreload [INFO] autoreload 15020 728 C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\web_clubs\views.py changed, reloading.
+2022-04-28 21:45:46,838 django.utils.autoreload [INFO] autoreload 19984 11024 Watching for file changes with StatReloader
+2022-04-28 21:48:03,168 django.utils.autoreload [INFO] autoreload 19984 11024 C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\web_clubs\views.py changed, reloading.
+2022-04-28 21:48:03,572 django.utils.autoreload [INFO] autoreload 10876 2108 Watching for file changes with StatReloader
+2022-04-28 21:50:24,695 django.utils.autoreload [INFO] autoreload 10876 2108 C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\web_clubs\views.py changed, reloading.
+2022-04-28 21:50:25,101 django.utils.autoreload [INFO] autoreload 4344 1832 Watching for file changes with StatReloader
+2022-04-28 21:50:28,483 django.request [WARNING] log 4344 6900 Not Found: /ddd/
+2022-04-28 21:50:29,272 django.request [WARNING] log 4344 6900 Not Found: /ddd/
+2022-04-28 21:50:29,764 django.request [WARNING] log 4344 6900 Not Found: /ddd/
+2022-04-28 21:50:29,970 django.request [WARNING] log 4344 6900 Not Found: /ddd/
+2022-04-28 21:50:30,263 django.request [WARNING] log 4344 6900 Not Found: /ddd/
+2022-04-28 21:50:30,571 django.request [WARNING] log 4344 6900 Not Found: /ddd/
+2022-04-28 21:50:35,830 django.utils.autoreload [INFO] autoreload 15920 10648 Watching for file changes with StatReloader
+2022-04-28 21:50:37,704 root [INFO] views 15920 7688 authorised user
+2022-04-28 21:50:47,070 django.request [WARNING] log 15920 7688 Not Found: /lfg/
+2022-04-28 21:51:41,089 django.utils.autoreload [INFO] autoreload 15920 10648 C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\web_clubs\views.py changed, reloading.
+2022-04-28 21:51:41,475 django.utils.autoreload [INFO] autoreload 11492 15252 Watching for file changes with StatReloader
+2022-04-28 21:55:10,668 django.utils.autoreload [INFO] autoreload 11492 15252 C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\web_clubs\views.py changed, reloading.
+2022-04-28 21:55:11,065 django.utils.autoreload [INFO] autoreload 19836 20660 Watching for file changes with StatReloader
+2022-04-28 21:55:12,800 django.request [WARNING] log 19836 20376 Not Found: /lfg/
+2022-04-28 21:55:13,718 django.request [WARNING] log 19836 20376 Not Found: /lfg/
+2022-04-28 21:55:13,904 django.request [WARNING] log 19836 20376 Not Found: /lfg/
+2022-04-28 21:55:14,103 django.request [WARNING] log 19836 20376 Not Found: /lfg/
+2022-04-28 21:55:18,266 root [INFO] views 19836 20376 authorised user
+2022-04-28 21:55:23,667 django.request [WARNING] log 19836 20376 Not Found: /list_clubs/TT/
+2022-04-28 21:56:46,038 django.utils.autoreload [INFO] autoreload 19836 20660 C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\web_clubs\views.py changed, reloading.
+2022-04-28 21:56:46,522 django.utils.autoreload [INFO] autoreload 21404 10408 Watching for file changes with StatReloader
+2022-04-28 21:56:53,766 root [INFO] views 21404 7828 authorised user
+2022-04-28 21:57:00,479 root [INFO] views 21404 7828 authorised user
+2022-04-28 21:57:24,707 django.request [WARNING] log 21404 7828 Not Found: /media/profile_picture/base_image_user_auiWJmW.jpg
+2022-04-28 21:57:39,501 django.request [WARNING] log 21404 7828 Not Found: /media/profile_picture/base_image_user_auiWJmW.jpg
+2022-04-28 21:58:06,812 django.request [WARNING] log 21404 7828 Not Found: /media/profile_picture/base_image_user_auiWJmW.jpg
+2022-04-28 21:58:19,595 django.request [WARNING] log 21404 19816 Not Found: /media/profile_picture/base_image_user_auiWJmW.jpg
+2022-04-28 22:09:10,593 django.utils.autoreload [INFO] autoreload 21404 10408 C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\web_clubs\urls.py changed, reloading.
+2022-04-28 22:09:10,993 django.utils.autoreload [INFO] autoreload 17056 10636 Watching for file changes with StatReloader
+2022-04-28 22:09:25,470 django.utils.autoreload [INFO] autoreload 17056 10636 C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\web_clubs\urls.py changed, reloading.
+2022-04-28 22:09:25,868 django.utils.autoreload [INFO] autoreload 20924 7712 Watching for file changes with StatReloader
+2022-04-28 22:09:45,477 django.utils.autoreload [INFO] autoreload 20924 7712 C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\web_clubs\urls.py changed, reloading.
+2022-04-28 22:09:45,890 django.utils.autoreload [INFO] autoreload 14696 4840 Watching for file changes with StatReloader
+2022-04-28 22:11:30,399 django.utils.autoreload [INFO] autoreload 14696 4840 C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\web_clubs\urls.py changed, reloading.
+2022-04-28 22:11:30,881 django.utils.autoreload [INFO] autoreload 7536 14500 Watching for file changes with StatReloader

@@ -1,4 +1,5 @@
 from django.urls import path
+from django.views.generic import TemplateView
 
 from riding_sport_clubs.web_clubs.views import HomeView, payment, ClubsListView, ClubDetailsView, ClubCreateView, \
     breeds_page, like_club, racing_info
@@ -6,6 +7,7 @@ from riding_sport_clubs.web_clubs.views import HomeView, payment, ClubsListView,
 urlpatterns = (
     path('', HomeView.as_view(), name='home page'),
     path('payment/', payment, name='pay page'),
+    path('access_denied/', TemplateView.as_view(template_name='web/authorization.html'), name='authorization'),
 
     path('list_clubs/', ClubsListView.as_view(), name='list clubs'),
     path('like/<int:pk>', like_club, name='like club'),

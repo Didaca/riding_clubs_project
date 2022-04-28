@@ -1,0 +1,12 @@
+{% extends 'bases/base.html' %}
+{% load static %}
+
+{% block base %}
+    <div class="video">
+        <video class="horse" autoplay muted playsinline loop>
+            <source src="{% static 'video/base_horse_video.mp4' %}"></video>
+    </div>
+    <div class="text">
+        <h1 style="color: darkred;">Access denied contact us!</h1>
+    </div>
+{% endblock %}
