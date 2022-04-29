@@ -368,3 +368,176 @@ Traceback (most recent call last):
 django.template.exceptions.TemplateSyntaxError: 'for' statements should use the format 'for x in y': for object in request | has_user
 2022-04-28 23:52:34,182 django.utils.autoreload [INFO] autoreload 7176 21388 C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\web_clubs\views.py changed, reloading.
 2022-04-28 23:52:34,649 django.utils.autoreload [INFO] autoreload 16036 2888 Watching for file changes with StatReloader
+2022-04-29 18:10:58,121 django.utils.autoreload [INFO] autoreload 6396 20492 Watching for file changes with StatReloader
+2022-04-29 18:11:01,557 django.request [ERROR] log 6396 20460 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\defaulttags.py", line 1027, in find_library
+    return parser.libraries[name]
+KeyError: 'base_page_tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\defaulttags.py", line 1089, in load
+    lib = find_library(parser, name)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\defaulttags.py", line 1029, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'base_page_tag' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+l10n
+log
+static
+tz
+2022-04-29 18:11:01,767 django.request [WARNING] log 6396 20460 Not Found: /favicon.ico
+2022-04-29 18:16:38,170 django.utils.autoreload [INFO] autoreload 17528 18612 Watching for file changes with StatReloader
+2022-04-29 18:17:20,802 root [INFO] views 17528 9524 authorised user
+2022-04-29 18:21:16,391 root [INFO] views 17528 11476 authorised user
+2022-04-29 18:21:20,933 root [INFO] views 17528 11476 authorised user
+2022-04-29 18:21:21,447 root [INFO] views 17528 11476 authorised user
+2022-04-29 18:21:23,505 root [INFO] views 17528 11476 authorised user
+2022-04-29 18:21:52,890 root [INFO] views 17528 11476 authorised user
+2022-04-29 22:44:58,871 root [INFO] views 17528 2972 authorised user
+2022-04-29 22:45:11,353 django.request [ERROR] log 17528 2972 Internal Server Error: /club_info/2/
+Traceback (most recent call last):
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\views\generic\base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\views\generic\detail.py", line 109, in get
+    context = self.get_context_data(object=self.object)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\web_clubs\views.py", line 96, in get_context_data
+    user_object = Profile.objects.get(pk=pk)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+riding_sport_clubs.web_accounts.models.Profile.DoesNotExist: Profile matching query does not exist.
+2022-04-29 22:47:05,239 django.utils.autoreload [INFO] autoreload 17528 18612 C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\web_clubs\views.py changed, reloading.
+2022-04-29 22:47:07,728 django.utils.autoreload [INFO] autoreload 12664 20028 Watching for file changes with StatReloader
+2022-04-29 22:47:08,416 django.request [ERROR] log 12664 21248 Internal Server Error: /club_info/2/
+Traceback (most recent call last):
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\views\generic\base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\views\generic\detail.py", line 109, in get
+    context = self.get_context_data(object=self.object)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\web_clubs\views.py", line 95, in get_context_data
+    user_object = Profile.objects.get(pk=self.request.user.pk)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+riding_sport_clubs.web_accounts.models.Profile.DoesNotExist: Profile matching query does not exist.
+2022-04-29 22:47:37,295 django.utils.autoreload [INFO] autoreload 11472 20828 Watching for file changes with StatReloader
+2022-04-29 22:47:41,590 root [INFO] views 11472 15144 authorised user
+2022-04-29 22:47:42,892 django.request [ERROR] log 11472 15144 Internal Server Error: /club_info/1/
+Traceback (most recent call last):
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\views\generic\base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\views\generic\detail.py", line 109, in get
+    context = self.get_context_data(object=self.object)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\web_clubs\views.py", line 95, in get_context_data
+    user_object = Profile.objects.get(pk=self.request.user.pk)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+riding_sport_clubs.web_accounts.models.Profile.DoesNotExist: Profile matching query does not exist.
+2022-04-29 22:48:01,192 django.request [ERROR] log 11472 15144 Internal Server Error: /club_info/3/
+Traceback (most recent call last):
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\views\generic\base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\views\generic\detail.py", line 109, in get
+    context = self.get_context_data(object=self.object)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\web_clubs\views.py", line 95, in get_context_data
+    user_object = Profile.objects.get(pk=self.request.user.pk)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+riding_sport_clubs.web_accounts.models.Profile.DoesNotExist: Profile matching query does not exist.
+2022-04-29 22:48:10,470 root [INFO] views 11472 15144 authorised user
+2022-04-29 22:49:35,761 django.request [ERROR] log 11472 15144 Internal Server Error: /club_info/1/
+Traceback (most recent call last):
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\views\generic\base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\views\generic\detail.py", line 109, in get
+    context = self.get_context_data(object=self.object)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\web_clubs\views.py", line 95, in get_context_data
+    user_object = Profile.objects.get(pk=self.request.user.pk)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+riding_sport_clubs.web_accounts.models.Profile.DoesNotExist: Profile matching query does not exist.
+2022-04-29 22:51:21,716 django.utils.autoreload [INFO] autoreload 11472 20828 C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\web_clubs\views.py changed, reloading.
+2022-04-29 22:51:22,216 django.utils.autoreload [INFO] autoreload 13592 10296 Watching for file changes with StatReloader
