@@ -5,6 +5,7 @@ from riding_sport_clubs.web_clubs.models import Club
 
 
 class ClubsListViewTests(TestCase):
+    image = 'static_files/images/base_image_horse.png'
 
     def test_get__expect_correct_template(self):
         response = self.client.get(reverse('list clubs'))
@@ -15,9 +16,9 @@ class ClubsListViewTests(TestCase):
 
         clubs_to_create = [
             Club(club_name='Eclipse', owner='Ivo Ivov', email_club='eclipse@club.bg', award_gold=3,
-                      award_silver=2, award_bronze=2, rating=0),
+                      award_silver=2, award_bronze=2, rating=0, club_logo=self.image),
             Club(club_name='Jokey', owner='Ivo Ivov', email_club='eclipse@club.bg', award_gold=3,
-                      award_silver=3, award_bronze=2, rating=0),
+                      award_silver=3, award_bronze=2, rating=0, club_logo=self.image),
         ]
 
         Club.objects.bulk_create(clubs_to_create)

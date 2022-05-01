@@ -541,3 +541,294 @@ Traceback (most recent call last):
 riding_sport_clubs.web_accounts.models.Profile.DoesNotExist: Profile matching query does not exist.
 2022-04-29 22:51:21,716 django.utils.autoreload [INFO] autoreload 11472 20828 C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\web_clubs\views.py changed, reloading.
 2022-04-29 22:51:22,216 django.utils.autoreload [INFO] autoreload 13592 10296 Watching for file changes with StatReloader
+2022-04-29 22:52:11,399 root [INFO] views 13592 20188 authorised user
+2022-04-29 22:52:26,589 root [INFO] views 13592 20188 authorised user
+2022-04-29 22:52:47,540 django.request [WARNING] log 13592 20188 Not Found: /account/profile/details/3
+2022-04-29 22:55:12,099 root [INFO] views 13592 20188 authorised user
+2022-04-30 09:57:17,436 django.utils.autoreload [INFO] autoreload 11704 18016 Watching for file changes with StatReloader
+2022-04-30 09:57:21,597 django.request [WARNING] log 11704 15900 Not Found: /favicon.ico
+2022-04-30 10:08:21,427 django.utils.autoreload [INFO] autoreload 18204 14608 Watching for file changes with StatReloader
+2022-04-30 10:08:26,903 root [INFO] views 18204 6108 authorised user
+2022-04-30 10:08:37,501 root [INFO] views 18204 6108 authorised user
+2022-04-30 10:09:35,024 root [INFO] views 18204 6108 authorised user
+2022-04-30 10:16:18,645 root [INFO] views 18204 20664 authorised user
+2022-04-30 10:20:51,506 root [INFO] views 18204 20664 authorised user
+2022-04-30 10:21:19,116 root [INFO] views 18204 20664 authorised user
+2022-04-30 10:27:01,575 root [INFO] views 10412 9404 authorised user
+2022-04-30 10:27:01,600 root [INFO] views 10412 9404 authorised user
+2022-04-30 10:27:01,604 django.request [ERROR] log 10412 9404 Internal Server Error: /list_clubs/
+Traceback (most recent call last):
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 1059, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 712, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 842, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = getattr(current, bit)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\db\models\fields\files.py", line 65, in url
+    self._require_file()
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\db\models\fields\files.py", line 40, in _require_file
+    raise ValueError(
+ValueError: The 'club_logo' attribute has no file associated with it.
+2022-04-30 10:27:02,034 root [INFO] views 10412 9404 authorised user
+2022-04-30 10:27:54,553 django.request [ERROR] log 10988 7368 Internal Server Error: /account/profile/details/1
+Traceback (most recent call last):
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 1059, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 712, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 842, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = getattr(current, bit)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\db\models\fields\files.py", line 65, in url
+    self._require_file()
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\db\models\fields\files.py", line 40, in _require_file
+    raise ValueError(
+ValueError: The 'picture' attribute has no file associated with it.
+2022-04-30 10:27:54,679 django.request [ERROR] log 10988 7368 Internal Server Error: /account/profile/delete/3
+Traceback (most recent call last):
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\views\generic\base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\views\generic\edit.py", line 278, in post
+    return self.form_valid(form)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\web_accounts\views.py", line 81, in form_valid
+    img = Profile.objects.get(pk=self.request.user.pk).picture.path
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+riding_sport_clubs.web_accounts.models.Profile.DoesNotExist: Profile matching query does not exist.
+2022-05-01 13:41:07,285 root [INFO] views 20196 7668 authorised user
+2022-05-01 13:41:07,322 root [INFO] views 20196 7668 authorised user
+2022-05-01 13:41:07,326 django.request [ERROR] log 20196 7668 Internal Server Error: /list_clubs/
+Traceback (most recent call last):
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 1059, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 712, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 842, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = getattr(current, bit)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\db\models\fields\files.py", line 65, in url
+    self._require_file()
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\db\models\fields\files.py", line 40, in _require_file
+    raise ValueError(
+ValueError: The 'club_logo' attribute has no file associated with it.
+2022-05-01 13:41:07,827 root [INFO] views 20196 7668 authorised user
+2022-05-01 13:44:03,835 root [INFO] views 15728 3624 authorised user
+2022-05-01 13:44:03,846 django.request [ERROR] log 15728 3624 Internal Server Error: /list_clubs/
+Traceback (most recent call last):
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 1059, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 712, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 842, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = getattr(current, bit)
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\db\models\fields\files.py", line 65, in url
+    self._require_file()
+  File "C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\venv\lib\site-packages\django\db\models\fields\files.py", line 40, in _require_file
+    raise ValueError(
+ValueError: The 'club_logo' attribute has no file associated with it.
