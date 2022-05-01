@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-yb9yo0+=9qzhou8jd(#+x4aq7v8*_##7v_wll-=cezp$xhh#ey
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '127.0.0.1'
+    'localhost',
+    'ridingclubs.herokuapp.com '
 ]
 
 
@@ -82,10 +83,10 @@ WSGI_APPLICATION = 'riding_sport_clubs.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'horse_clubs_db',
-        'USER': 'postgres',
-        'PASSWORD': '1123QwER',
-        'HOST': '127.0.0.1',
+        'NAME': 'd5u5ki8suteb52',
+        'USER': 'lwiclennhnmdrx',
+        'PASSWORD': '8aa4aafc4a8205c68cdc96aeec054635e42c99fe6b3e79cc98a940e533523931',
+        'HOST': 'ec2-63-32-248-14.eu-west-1.compute.amazonaws.com',
         'PORT': '5432',
     }
 }
