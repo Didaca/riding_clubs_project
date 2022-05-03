@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block base %}
+    {% if object_list %}
     <section id="catalogPage">
         {% for club in object_list %}
             <div class="card-box">
@@ -45,4 +46,7 @@
             </div>
         {% endfor %}
     </section>
+    {% else %}
+        <h2>No clubs yet!</h2>
+    {% endif %}
 {% endblock %}

@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/4.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -23,10 +23,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-yb9yo0+=9qzhou8jd(#+x4aq7v8*_##7v_wll-=cezp$xhh#ey'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv('DEBUG', 'False') == 'True'
 
 ALLOWED_HOSTS = [
     'localhost',
+    '127.0.0.1',
     'ridingclubs.herokuapp.com'
 ]
 
@@ -83,10 +84,10 @@ WSGI_APPLICATION = 'riding_sport_clubs.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd5u5ki8suteb52',
-        'USER': 'lwiclennhnmdrx',
-        'PASSWORD': '8aa4aafc4a8205c68cdc96aeec054635e42c99fe6b3e79cc98a940e533523931',
-        'HOST': 'ec2-63-32-248-14.eu-west-1.compute.amazonaws.com',
+        'NAME': 'd5v138qvuc6aap',
+        'USER': 'lorpgxvqwqhbha',
+        'PASSWORD': '821726e2bdb7850c9c9ed846c77ccb1ef415084ddddb56d075e7a620afd9d382',
+        'HOST': 'ec2-176-34-211-0.eu-west-1.compute.amazonaws.com',
         'PORT': '5432',
     }
 }

@@ -65,9 +65,8 @@ class ClubsListView(views.ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data()
-        pk = self.request.user.pk
         try:
-            user_object = Profile.objects.get(pk=pk)
+            user_object = Profile.objects.get(pk=self.request.user.pk)
             context['object'] = user_object
         except Profile.DoesNotExist:
             context['object'] = None
