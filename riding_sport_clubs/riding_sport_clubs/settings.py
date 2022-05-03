@@ -20,16 +20,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-yb9yo0+=9qzhou8jd(#+x4aq7v8*_##7v_wll-=cezp$xhh#ey'
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', 'False') == 'True'
+DB = os.getenv('DB')
 
-ALLOWED_HOSTS = [
-    'localhost',
-    '127.0.0.1',
-    'ridingclubs.herokuapp.com'
-]
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS').split(' ')
 
 
 DJANGO_APPS = [
@@ -81,16 +78,28 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'riding_sport_clubs.wsgi.application'
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd5v138qvuc6aap',
-        'USER': 'lorpgxvqwqhbha',
-        'PASSWORD': '821726e2bdb7850c9c9ed846c77ccb1ef415084ddddb56d075e7a620afd9d382',
-        'HOST': 'ec2-176-34-211-0.eu-west-1.compute.amazonaws.com',
-        'PORT': '5432',
+if DB == 'Production':
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'd5v138qvuc6aap',
+            'USER': 'lorpgxvqwqhbha',
+            'PASSWORD': '821726e2bdb7850c9c9ed846c77ccb1ef415084ddddb56d075e7a620afd9d382',
+            'HOST': 'ec2-176-34-211-0.eu-west-1.compute.amazonaws.com',
+            'PORT': '5432',
+        }
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'horse_clubs_db',
+            'USER': 'postgres',
+            'PASSWORD': '1123QwER',
+            'HOST': '127.0.0.1',
+            'PORT': '5432',
+        }
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
