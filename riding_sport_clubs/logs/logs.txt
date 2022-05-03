@@ -896,3 +896,14 @@ ValueError: The 'club_logo' attribute has no file associated with it.
 2022-05-03 22:05:10,277 root [INFO] views 10276 15464 authorised user
 2022-05-03 22:11:26,604 django.utils.autoreload [INFO] autoreload 10276 5796 C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\settings.py changed, reloading.
 2022-05-03 22:11:26,995 django.utils.autoreload [INFO] autoreload 11508 20436 Watching for file changes with StatReloader
+2022-05-03 22:15:18,845 django.utils.autoreload [INFO] autoreload 12076 16656 Watching for file changes with StatReloader
+2022-05-03 22:16:18,693 django.utils.autoreload [INFO] autoreload 12076 16656 C:\Users\Win10\PycharmProjects\Repository_github_heroku\riding_clubs_project\riding_sport_clubs\riding_sport_clubs\settings.py changed, reloading.
+2022-05-03 22:16:19,141 django.utils.autoreload [INFO] autoreload 17880 19532 Watching for file changes with StatReloader
+2022-05-03 22:16:24,957 django.utils.autoreload [INFO] autoreload 8500 18684 Watching for file changes with StatReloader
+2022-05-03 22:20:09,547 django.utils.autoreload [INFO] autoreload 16444 14936 Watching for file changes with StatReloader
+2022-05-03 22:20:14,083 django.security.DisallowedHost [ERROR] exception 16444 10104 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2022-05-03 22:20:14,136 django.request [WARNING] log 16444 10104 Bad Request: /
+2022-05-03 22:21:28,376 django.utils.autoreload [INFO] autoreload 21492 8816 Watching for file changes with StatReloader
+2022-05-03 22:21:59,211 django.utils.autoreload [INFO] autoreload 15344 2280 Watching for file changes with StatReloader
+2022-05-03 22:22:49,744 django.utils.autoreload [INFO] autoreload 16480 17924 Watching for file changes with StatReloader
+2022-05-03 22:25:52,855 django.utils.autoreload [INFO] autoreload 13276 20528 Watching for file changes with StatReloader
