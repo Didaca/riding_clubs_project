@@ -907,3 +907,12 @@ ValueError: The 'club_logo' attribute has no file associated with it.
 2022-05-03 22:21:59,211 django.utils.autoreload [INFO] autoreload 15344 2280 Watching for file changes with StatReloader
 2022-05-03 22:22:49,744 django.utils.autoreload [INFO] autoreload 16480 17924 Watching for file changes with StatReloader
 2022-05-03 22:25:52,855 django.utils.autoreload [INFO] autoreload 13276 20528 Watching for file changes with StatReloader
+2022-05-16 18:28:28,226 django.utils.autoreload [INFO] autoreload 3456 8452 Watching for file changes with StatReloader
+2022-05-16 18:28:31,757 django.request [WARNING] log 3456 11060 Not Found: /favicon.ico
+2022-05-16 18:28:43,936 root [INFO] views 3456 11060 authorised user
+2022-05-16 19:03:19,583 root [INFO] views 3456 15464 authorised user
+2022-05-18 22:13:29,304 django.utils.autoreload [INFO] autoreload 6836 20380 Watching for file changes with StatReloader
+2022-05-18 22:18:58,006 django.utils.autoreload [INFO] autoreload 12676 2452 Watching for file changes with StatReloader
+2022-05-18 22:19:56,038 root [INFO] views 12676 9596 authorised user
+2022-05-18 22:20:06,548 root [INFO] views 12676 13828 authorised user
+2022-05-18 22:25:18,123 django.utils.autoreload [INFO] autoreload 20848 19204 Watching for file changes with StatReloader

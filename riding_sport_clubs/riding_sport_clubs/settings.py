@@ -24,7 +24,6 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', 'False') == 'True'
-DB = os.getenv('DB')
 
 ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS').split(' ')
 
@@ -78,18 +77,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'riding_sport_clubs.wsgi.application'
 
-if DB == 'Production':
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': 'd5v138qvuc6aap',
-            'USER': 'lorpgxvqwqhbha',
-            'PASSWORD': '821726e2bdb7850c9c9ed846c77ccb1ef415084ddddb56d075e7a620afd9d382',
-            'HOST': 'ec2-176-34-211-0.eu-west-1.compute.amazonaws.com',
-            'PORT': '5432',
-        }
-    }
-else:
+DATAB = os.getenv('DB')
+if DATAB == 'Development':
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
@@ -97,6 +86,17 @@ else:
             'USER': 'postgres',
             'PASSWORD': '1123QwER',
             'HOST': '127.0.0.1',
+            'PORT': '5432',
+        }
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'd5v138qvuc6aap',
+            'USER': 'lorpgxvqwqhbha',
+            'PASSWORD': '821726e2bdb7850c9c9ed846c77ccb1ef415084ddddb56d075e7a620afd9d382',
+            'HOST': 'ec2-176-34-211-0.eu-west-1.compute.amazonaws.com',
             'PORT': '5432',
         }
     }
